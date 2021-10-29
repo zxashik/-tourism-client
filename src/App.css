@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Damion&display=swap");
+
 .App {
   text-align: center;
 }
@@ -26,6 +28,17 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.green-color {
+  color: #d35400;
+  font-family: Damion;
+}
+.green-bg {
+  background-color: #d35400;
+}
+.my-font {
+  font-family: Damion;
 }
 
 @keyframes App-logo-spin {
