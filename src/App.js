@@ -7,9 +7,11 @@ import Header from './Pages/Home/Shared/Header/Header';
 import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Login from './Pages/Login/Login/Login';
-import Shop from './Pages/Shop/Shop';
 import Register from './Pages/Login/Register/Register';
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder/PlaceOrder';
+import AddService from './Pages/AddService/AddService';
+import MyOrders from './Pages/MyOrders/MyOrders';
+import ManageServices from './Pages/ManageServices/ManageServices';
 
 function App() {
   return (
@@ -25,8 +27,14 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <PrivateRoute path="/shop">
-              <Shop></Shop>
+            <PrivateRoute path="/addService">
+              <AddService></AddService>
+            </PrivateRoute>
+            <PrivateRoute path="/myOrders">
+              <MyOrders></MyOrders>
+            </PrivateRoute>
+            <PrivateRoute path="/manageServices">
+              <ManageServices></ManageServices>
             </PrivateRoute>
 
             <Route path="/login">

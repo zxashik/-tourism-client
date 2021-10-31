@@ -1,0 +1,46 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "name": "PARAGLIDING BIG BLUE SUMMER",
+      "price": "300",
+      "description": "Fitness Habit Fit combines exciting striking combinations with functional body weight exercises in a high-intensity, circuit-training format. Learn real boxing techniques on our innovative Focusmaster striking equipment while taking your workout to the next level. Let our certified instructors guide you to the best shape of your life with this transformative workout.",
+      "img": "https://i.ibb.co/gJtqrhM/7.png"
+    },
+    {
+      "id": 2,
+      "name": "MARTIAL ARTS ADULTS",
+      "price": "100",
+      "description": "Designed by Greg Jackson, Fitness Habit Martial Arts incorporates the techniques that the pros use and makes them accessible to everyone. You’ll not only train like a pro, but you’ll also benefit from the martial arts mind-body connection, the key to outstanding results.",
+      "img": "https://i.ibb.co/ZJ3h3rW/8.png"
+    },
+    {
+      "id": 3,
+      "name": "MARTIAL ARTS KIDS",
+      "price": "150",
+      "description": "Adapted for children, Fitness Habit Martial Arts teaches kids great life skills, including self-confidence, focus and self-defense, in a fun and engaging way. ",
+      "img": "https://i.ibb.co/NFzJ761/9.png"
+    },
+    {
+      "id": 4,
+      "name": "FITNESS HABIT STRONG",
+      "price": "180",
+      "description": "Fitness Habit Strong is a 45 minute total body workout that involves striking on our innovative Focusmaster machines and strength building dumbbell exercises to deliver a fun, game-changing effective class every time you glove up.",
+      "img": "https://i.ibb.co/84mpNfZ/10.png"
+    },
+    {
+      "id": 5,
+      "name": "FITNESS HABIT SWEAT",
+      "price": "100",
+      "description": "Fitness Habit Sweat is a highly addictive, results-driven workout combining kettlebells, battle ropes and the modern equipment used by today’s champions to get you in peak condition. Get in phenomenal shape and have fun while doing it.",
+      "img": "https://i.ibb.co/F7YSGFn/11.png"
+    },
+    {
+      "id": 6,
+      "name": "FITNESS HABIT STRIKE",
+      "price": "300",
+      "description": "Fitness Habit Strike was designed by our experts to teach you the signature striking combinations used by today’s world champions in a fun and friendly environment. Have a blast kicking, punching and sweating your way through countless rounds on our heavy bags, as our coaches lead you every step of the way.",
+      "img": "https://i.ibb.co/0jbt973/12.png"
+    }
+  ]
+}

@@ -4,24 +4,17 @@ import { useParams } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
-const PlaceOrder = (services) => {
+const PlaceOrder = () => {
     const { serviceId } = useParams();
+    const [service, setService] = useState({});
     const { user } = useAuth();
 
-    const [users, setUsers] = useState({});
-
     useEffect(() => {
-        fetch('/services.json')
+        fetch(`https://eerie-eyeballs-55193.herokuapp.com/services/${serviceId}`)
             .then(res => res.json())
-            .then(data => {
-                const service = data.find(user => user?.id === parseInt(serviceId));
-                setUsers(service);
-            })
+            .then(data => setService(data));
     }, [])
 
-    console.log({ users });
-    console.log({ user });
-    console.log({ serviceId });
 
 
 
@@ -35,15 +28,11 @@ const PlaceOrder = (services) => {
                 <div className="row gx-5">
                     <div className="col">
                         <div className="p-3 ">
-                            <h1>{users.name}</h1>
-                            <img src={users.img} alt="" />
-                            <p className="w-50 my-2">{users.description}</p>
+                            <h1>{service.name}</h1>
+                            <img src={service.img} alt="" />
+                            <p className="w-50 my-2">{service.description}</p>
+                            <h6>Cost: {service.price}</h6>
 
-
-                            <div className="my-5">
-                                <NavLink className="mx-2 home-btn" exact to="/" style={{ fontWeight: "bold", color: "black", textDecoration: "none" }} activeStyle={{ fontWeight: "bold", color: "orange", textDecoration: "none" }}>BACK TO HOMEPAGE</NavLink>
-
-                            </div>
                         </div>
                     </div>
                     <div className="col">
@@ -54,6 +43,10 @@ const PlaceOrder = (services) => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="container my-5">
+                <NavLink className="mx-2 home-btn" exact to="/" style={{ fontWeight: "bold", color: "black", textDecoration: "none" }} activeStyle={{ fontWeight: "bold", color: "orange", textDecoration: "none" }}>BACK TO HOMEPAGE</NavLink>
+
             </div>
 
         </div >

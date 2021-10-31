@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "PARAGLIDING BIG BLUE SUMMER",
+    "price": "300",
+    "description": "Fly high above Interlaken and Lake Thun. Our driver takes you and the pilot up the mountain with our Paragliding-Interlaken van. During the 20-minute drive you will receive the safety-talk and a briefing on the take-off and landing process.",
+    "img": "https://i.ibb.co/4RY2tys/a1.webp"
+  },
+  {
+    "id": 2,
+    "name": "BUNGY JUMP STOCKHORN INTERLAKEN",
+    "price": "100",
+    "description": "Stockhorn bungy located in the Swiss Alps is one of the most breathtaking and unusual bungy sites in the world.",
+    "img": "https://i.ibb.co/02t8gyR/a2.webp"
+  },
+  {
+    "id": 3,
+    "name": "MONSTER SCOOTER TOUR",
+    "price": "150",
+    "description": "Monster Scooters are a fun way to explore the Swiss mountain scenery with the whole family. ",
+    "img": "https://i.ibb.co/0VmWVDq/a3.webp"
+  },
+  {
+    "id": 4,
+    "name": "VIA FERRATA MÜRREN",
+    "price": "180",
+    "description": "Via Ferrata Mürren has some exposed passages and views of some of the most impressive mountain scenery in the swiss alps.",
+    "img": "https://i.ibb.co/n3MgK4K/a4.webp"
+  },
+  {
+    "id": 5,
+    "name": "LAKE AND WATERFALL TOUR",
+    "price": "100",
+    "description": "Surrounded by mountains, forests and water, admire the beauty of this magical place while listening to stories and legends from your personal, local guide.",
+    "img": "https://i.ibb.co/1dMfBrS/a5.webp"
+  },
+  {
+    "id": 6,
+    "name": "HARDER KULM PRIVATE TOUR",
+    "price": "300",
+    "description": "Join us for a guided trip to the Harder Kulm, top of Interlaken.",
+    "img": "https://i.ibb.co/yQM5z4r/a6.webp"
+  }
+]

@@ -1,9 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import './Service.css';
 
-const Service = ({ service }) => {
-    const { id, name, description, img } = service;
+const Service = ({ service, index }) => {
+    const { _id, name, price, description, img } = service;
+    const { user } = useAuth();
+    console.log({ user });
+
+    const handleAddToCart = async () => {
+        console.log(service);
+        // console.log(index);
+        const data = { name, price, description, img, userId: user.uid }
+
+        await fetch(`https://eerie-eyeballs-55193.herokuapp.com/order/create`, {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify(data),
+        });
+    }
+
     return (
 
         <div className="col">
@@ -12,10 +28,12 @@ const Service = ({ service }) => {
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text">{description}</p>
+                    <p className="card-text"><b>Cost: {price}</b></p>
                     <div className="m-auto pb-3">
-                        <Link to={`/placeOrder/${id}`}>
-                            <button className="btn green-bg text-white">Book Now</button>
+                        <Link to={`/placeOrder/${_id}`}>
+                            <button className="btn green-bg text-white me-4">Book Now</button>
                         </Link>
+                        <button onClick={handleAddToCart} className="btn btn-dark">Add To Cart</button>
                     </div>
                 </div>
             </div>

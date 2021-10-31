@@ -5,7 +5,7 @@ import './Services.css';
 const Services = () => {
     const [services, setServices] = useState([])
     useEffect(() => {
-        fetch('services.json')
+        fetch('https://eerie-eyeballs-55193.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data));
     }, [])
@@ -16,7 +16,7 @@ const Services = () => {
             <div className="container my-5">
                 <div className="row row-cols-1 row-cols-md-3 gx-5 gy-5">
                     {
-                        services.map(service => <Service
+                        services.map((service) => <Service
                             key={service.id}
                             service={service}
                         ></Service>)

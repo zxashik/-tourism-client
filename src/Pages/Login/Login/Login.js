@@ -33,7 +33,7 @@ const Login = () => {
                         </div>
                         <input type="submit" className="btn green-bg text-white" value="Submit" />
                     </form>
-                    <p className="my-1">NEW USER? <Link to="/register">Create Account</Link></p>
+
                     <div className="my-1">-------or----------</div>
                     <button
                         className="btn green-bg text-white"
